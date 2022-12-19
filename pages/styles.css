@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 .root {
@@ -35,12 +35,12 @@ body {
     gap: 64px;
 }
 
-.header {    
+.header {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: #fff;
 }
 
 .header-title {
@@ -56,14 +56,22 @@ body {
     line-height: 1.2em;
     text-align: center;
     margin: 0;
+    margin-bottom: 32px;
 }
 
-.header-subtitle h2 {
+.header-subtitle h2,
+h3 {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
+    text-align: center;
     color: rgba(255, 255, 255, 0.75);
+}
+
+.header-subtitle h3 {
+    font-size: 16px;
+    margin-top: 28px;
 }
 
 .prompt-container {
@@ -114,14 +122,12 @@ body {
 }
 
 textarea {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
 }
-
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color: rgba(255, 255, 255, 0.75);
 }
-
 
 .prompt-buttons {
     display: flex;
@@ -166,7 +172,7 @@ textarea {
 }
 
 .or p {
-    color: rgba(255, 255, 255, 0.25)
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .generate-button {
@@ -261,7 +267,7 @@ textarea {
 }
 
 .grow {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
@@ -368,11 +374,13 @@ textarea {
         font-size: 50px;
     }
 
-    .header-subtitle h2 {
+    .header-subtitle h2,
+    h3 {
         text-align: center;
     }
 
-    .key-stroke, .or {
+    .key-stroke,
+    .or {
         display: none;
     }
 
@@ -390,15 +398,13 @@ textarea {
     }
 }
 
-
-
- /* Loading ring animation */
+/* Loading ring animation */
 .loader {
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: inline-block;
-    border-top: 2px solid #FFF;
+    border-top: 2px solid #fff;
     border-right: 2px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
