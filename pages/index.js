@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <div className="root">
             <Head>
-                <title>GPT-3 Writer | buildspace</title>
+                <title>GPT-3 Music Idea Generator</title>
             </Head>
             <div className="container">
                 <div className="header">
